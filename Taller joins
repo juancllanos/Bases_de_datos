@@ -1,0 +1,16 @@
+select *
+from curso
+
+select * 
+from estudiante;
+
+select * 
+from estcursos;
+
+select * 
+from estcursos natural join curso;
+
+select  *
+from estudiante join (select * from estcursos natural join curso) as A  
+on id = estid
+
